@@ -9,7 +9,7 @@ $(document).ready(() => {
     localStorage.setItem(time, value);
   });
   const hourUpdater = () => {
-    const currentHour = moment().hour() + 5;
+    const currentHour = moment().hour();
     $(".time-block").each(function () {
       const blockHour = parseInt($(this).attr("id").split("-")[1]);
 
